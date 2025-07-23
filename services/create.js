@@ -20,10 +20,9 @@
 //Generate a HTML Tree That Fix
 //Select Custom Fonts and Add
 
-export async function parseTree(abstractedBlocks) {
-    let treeMap = {}
+export async function generateHTMLTree() {
     for (const i = 0; i < abstractedBlocks.length; i++) {
-        if (abstractedBlocks[i] == "titleBlock") {
+        if (abstractedBlocks[i].type == "paragraph") {
             
         } else if (abstractedBlocks[i] == "paragraphBlock") {
 
@@ -31,8 +30,4 @@ export async function parseTree(abstractedBlocks) {
             
         }
     }
-}
-
-export async function generateHTMLTree() {
-    
 }
